@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ABTestInstaller" load_steps=3 format=3 uid="uid://cloyfgbt6m04"]
+
+[ext_resource type="Resource" uid="uid://dx2up8w4ryvq4" path="res://_Game/Configs/ABTests/DefaultGameConfiguration.tres" id="1_j4yda"]
+[ext_resource type="Script" path="res://_Game/Sources/Features/ABTests/ABTestInstaller.cs" id="1_ytee1"]
+
+[resource]
+script = ExtResource("1_ytee1")
+configs = ExtResource("1_j4yda")

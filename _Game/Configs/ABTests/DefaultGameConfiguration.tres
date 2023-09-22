@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="GameConfiguration" load_steps=3 format=3 uid="uid://dx2up8w4ryvq4"]
+
+[ext_resource type="Resource" uid="uid://derdwq4pgee1g" path="res://_Game/Configs/Test/TestConfig.tres" id="1_oh07a"]
+[ext_resource type="Script" path="res://_Game/Sources/Features/ABTests/GameConfiguration.cs" id="1_y72nm"]
+
+[resource]
+script = ExtResource("1_y72nm")
+configs = Array[Resource]([ExtResource("1_oh07a")])

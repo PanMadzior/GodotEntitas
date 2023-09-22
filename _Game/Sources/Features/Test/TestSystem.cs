@@ -2,11 +2,11 @@
 
 namespace Game;
 
-public class TestSystem : Systems
+public class TestSystem : InjectableFeature
 {
-    public TestSystem()
+    public TestSystem( Contexts contexts )
     {
-        Add( new TestExecuteSystem() );
-        Add( new TestInitSystem() );
+        Add( new TestExecuteSystem( contexts ) );
+        Add( new TestInitSystem( contexts ) );
     }
 }

@@ -2,11 +2,11 @@
 
 namespace Game;
 
-public class FixedStepSystems : Systems
+public class FixedStepSystems : InjectableFeature
 {
-    public FixedStepSystems()
+    public FixedStepSystems( Contexts contexts )
     {
-        Add( new TestSystem() );
-        Add( new GameEventSystems( Contexts.sharedInstance ) );
+        Add( new TestSystem( contexts ) );
+        Add( new GameEventSystems( contexts ) );
     }
 }

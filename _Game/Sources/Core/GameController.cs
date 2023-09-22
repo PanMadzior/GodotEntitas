@@ -1,6 +1,7 @@
 using Godot;
-using Game;
 using Zenject;
+
+namespace Game;
 
 [GlobalClass]
 public partial class GameController : Node
@@ -17,7 +18,8 @@ public partial class GameController : Node
         GD.Print( "Inject works!" );
         _contexts         = contexts;
         _container        = container;
-        _fixedStepSystems = new FixedStepSystems();
+        _fixedStepSystems = new FixedStepSystems( contexts );
+        _fixedStepSystems.InjectSelfAndChildren( container );
         _fixedStepSystems.Initialize();
     }
 

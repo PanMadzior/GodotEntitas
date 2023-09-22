@@ -5,6 +5,8 @@ namespace Game;
 
 public class TestInitSystem : IInitializeSystem
 {
+    public TestInitSystem( Contexts contexts ) { }
+
     public void Initialize()
     {
         Contexts.sharedInstance.game.CreateEntity().AddTest( 1 );

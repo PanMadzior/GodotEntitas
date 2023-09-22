@@ -1,0 +1,7 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://derdwq4pgee1g"]
+
+[ext_resource type="Script" path="res://_Game/Sources/Features/Test/Configs/TestConfig.cs" id="1_rkjde"]
+
+[resource]
+script = ExtResource("1_rkjde")
+testString = "test string"

@@ -17,7 +17,7 @@ public partial class ZenjectContext : Node
     public override void _Ready()
     {
         CreateContainer();
-        InstallNodeInstallers();
+        InstallResourceInstallers();
         InstallNodeInstallers();
         InjectSceneNodes();
         Container.ResolveRoots();
@@ -32,7 +32,7 @@ public partial class ZenjectContext : Node
     private void InstallResourceInstallers()
     {
         foreach ( var resourceInstaller in resourceInstallers ) {
-            GD.Print( $"Installing {resourceInstaller.ResourceName} resource installer..." );
+            GD.Print( $"Installing {resourceInstaller.ResourcePath} resource installer..." );
             var installer = resourceInstaller.GetInstaller();
             Container.Inject( installer );
             installer.InstallBindings();
@@ -52,7 +52,7 @@ public partial class ZenjectContext : Node
     private void InjectSceneNodes()
     {
         var rootNode = GetParent() ?? this;
-        GD.Print( $"Injecting nodes form root={rootNode.Name}..." );
+        GD.Print( $"Injecting nodes from root={rootNode.Name}..." );
         InjectNode( rootNode );
     }
 
