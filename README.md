@@ -1,4 +1,6 @@
 ﻿# Godot with Entitas and Zenject
+ ![godot-entitas-zenject](https://github.com/PanMadzior/GodotEntitas/assets/7965590/d96a6a53-b90c-44a9-baf5-78352db983d0)
+ 
 Godot proof of concept test project with external C# plugins created mainly for Unity:
 - [Entitas](https://github.com/sschmid/Entitas) - ECS framework (v1.14.1)
 - [Zenject](https://github.com/modesttree/Zenject) - dependency injection framework (v9.1.0)
