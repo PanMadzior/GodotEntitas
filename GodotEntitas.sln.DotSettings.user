@@ -5,4 +5,7 @@
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CProjects_005CGamedev_005CGodot_005CGodotEntitas_005CEntitas_005CDesperateDevs_005CDesperateDevs_002ESerialization_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CProjects_005CGamedev_005CGodot_005CGodotEntitas_005CEntitas_005CDesperateDevs_005CDesperateDevs_002EThreading_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CProjects_005CGamedev_005CGodot_005CGodotEntitas_005CEntitas_005CEntitas_005CEntitas_002ECodeGeneration_002EAttributes_002Edll/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CProjects_005CGamedev_005CGodot_005CGodotEntitas_005CEntitas_005CEntitas_005CEntitas_002Edll/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CProjects_005CGamedev_005CGodot_005CGodotEntitas_005CEntitas_005CEntitas_005CEntitas_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CProjects_005CGamedev_005CGodot_005CGodotEntitas_005CZenject_005CZenject_002DSignals_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CProjects_005CGamedev_005CGodot_005CGodotEntitas_005CZenject_005CZenject_002Dusage_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=E_003A_005CProjects_005CGamedev_005CGodot_005CGodotEntitas_005CZenject_005CZenject_002Edll/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>

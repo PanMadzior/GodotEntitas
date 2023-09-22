@@ -1,23 +1,32 @@
 using Godot;
 using Tabasco;
+using Zenject;
 
 public partial class GameController : Node
 {
-	private FixedStepSystems _fixedStepSystems;
+    private Contexts         _contexts;
+    private DiContainer      _container;
+    private FixedStepSystems _fixedStepSystems;
 
-	public override void _Ready()
-	{
-		_fixedStepSystems = new FixedStepSystems();
-		_fixedStepSystems.Initialize();
-	}
+    public override void _Ready() { }
 
-	public override void _Process(double delta)
-	{
-	}
+    [Inject]
+    private void Init( Contexts contexts, DiContainer container )
+    {
+        GD.Print( "Inject works!" );
+        _contexts         = contexts;
+        _container        = container;
+        _fixedStepSystems = new FixedStepSystems();
+        _fixedStepSystems.Initialize();
+    }
 
-	public override void _PhysicsProcess( double delta )
-	{
-		_fixedStepSystems.Execute();
-		_fixedStepSystems.Cleanup();
-	}
+    public override void _Process( double delta ) { }
+
+    public override void _PhysicsProcess( double delta )
+    {
+        if ( _fixedStepSystems == null )
+            return;
+        _fixedStepSystems.Execute();
+        _fixedStepSystems.Cleanup();
+    }
 }

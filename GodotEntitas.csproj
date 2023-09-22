@@ -29,6 +29,15 @@
     <Reference Include="Entitas.CodeGeneration.Attributes">
       <HintPath>Entitas\Entitas\Entitas.CodeGeneration.Attributes.dll</HintPath>
     </Reference>
+    <Reference Include="Zenject">
+      <HintPath>Zenject\Zenject.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-Signals">
+      <HintPath>Zenject\Zenject-Signals.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>Zenject\Zenject-usage.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Generated/Generated/Game/Components/GameTestComponent.cs" />

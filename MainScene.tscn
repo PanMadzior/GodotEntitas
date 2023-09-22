@@ -1,12 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://bv8k1ixtnjs56"]
+[gd_scene load_steps=4 format=3 uid="uid://bv8k1ixtnjs56"]
 
+[ext_resource type="Script" path="res://_Game/Sources/Core/ZenjectContext.cs" id="1_qiuo3"]
 [ext_resource type="Script" path="res://_Game/Sources/Core/GameController.cs" id="1_r4h07"]
 [ext_resource type="Script" path="res://_Game/Sources/Features/Test/Views/TestListener.cs" id="2_rgclj"]
 
 [node name="Root" type="Node3D"]
 
+[node name="ZenjectContext" type="Node" parent="."]
+script = ExtResource("1_qiuo3")
+
 [node name="GameController" type="Node" parent="."]
 script = ExtResource("1_r4h07")
 
-[node name="Node" type="Node" parent="."]
+[node name="TestEntitasListener" type="Node" parent="."]
 script = ExtResource("2_rgclj")
