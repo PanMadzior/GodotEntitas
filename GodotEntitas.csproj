@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Godot.NET.Sdk/4.1.1">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <_TargetFrameworkDirectories>Jenny.Plugins.ReferenceAssemblyPathsPreProcessor</_TargetFrameworkDirectories>
+    <_FullFrameworkReferenceAssemblyPaths>Jenny.Plugins.ReferenceAssemblyPathsPreProcessor</_FullFrameworkReferenceAssemblyPaths>
+    <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DesperateDevs.Caching">
+      <HintPath>Entitas\DesperateDevs\DesperateDevs.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="DesperateDevs.Extensions">
+      <HintPath>Entitas\DesperateDevs\DesperateDevs.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DesperateDevs.Reflection">
+      <HintPath>Entitas\DesperateDevs\DesperateDevs.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="DesperateDevs.Serialization">
+      <HintPath>Entitas\DesperateDevs\DesperateDevs.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="DesperateDevs.Threading">
+      <HintPath>Entitas\DesperateDevs\DesperateDevs.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas">
+      <HintPath>Entitas\Entitas\Entitas.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas.CodeGeneration.Attributes">
+      <HintPath>Entitas\Entitas\Entitas.CodeGeneration.Attributes.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Generated/Generated/Game/Components/GameTestComponent.cs" />
+    <Compile Include="Generated/Generated/Game/Components/GameAnyTestListenerComponent.cs" />
+    <Compile Include="Generated/Generated/Game/GameComponentsLookup.cs" />
+    <Compile Include="Generated/Generated/Input/InputComponentsLookup.cs" />
+    <Compile Include="Generated/Generated/Game/GameAttribute.cs" />
+    <Compile Include="Generated/Generated/Input/InputAttribute.cs" />
+    <Compile Include="Generated/Generated/Game/GameContext.cs" />
+    <Compile Include="Generated/Generated/Input/InputContext.cs" />
+    <Compile Include="Generated/Generated/Game/GameMatcher.cs" />
+    <Compile Include="Generated/Generated/Input/InputMatcher.cs" />
+    <Compile Include="Generated/Generated/Contexts.cs" />
+    <Compile Include="Generated/Generated/Game/GameEntity.cs" />
+    <Compile Include="Generated/Generated/Input/InputEntity.cs" />
+    <Compile Include="Generated/Generated/Events/Components/AnyTestListenerComponent.cs" />
+    <Compile Include="Generated/Generated/Events/Interfaces/IAnyTestListener.cs" />
+    <Compile Include="Generated/Generated/Events/Systems/AnyTestEventSystem.cs" />
+    <Compile Include="Generated/Generated/Events/GameEventSystems.cs" />
+    <Compile Include="Generated/Generated/Feature.cs" />
+  </ItemGroup>
+</Project>
