@@ -34,5 +34,8 @@ Godot proof of concept test project with external C# plugins created mainly for 
 - Create folder `Zenject` and extract `.dll` files there.
 - Add references to all the Zenject `.dll` files in your `csproj`.
 
+## Project notes
+Check out `Game/MainScene.tscn` and `Game/Sources` folder for the example setup. In `Game/Sources/Core` you can find ports of the Unity Zenject scripts and an Entitas controller.
+
 ## Caution
 This setup worked on Windows and I haven't tried building the project yet.
