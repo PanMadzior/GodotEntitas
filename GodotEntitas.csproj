@@ -59,4 +59,7 @@
     <Compile Include="Generated/Generated/Events/GameEventSystems.cs" />
     <Compile Include="Generated/Generated/Feature.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.md" />
+  </ItemGroup>
 </Project>
