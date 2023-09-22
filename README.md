@@ -27,6 +27,7 @@ Godot proof of concept test project with external C# plugins created mainly for 
 - To generate code use command `dotnet Jenny\Jenny.Generator.Cli.dll gen`.
   - If you run into some generation errors try removing `Generated` folder first.
   - Use shell script `_JennyGenerateScript.sh` to do it automatically.
+- If you run in some other issues, check out [godot-entitas-template](https://github.com/Guendeli/godot-entitas-template) repo by Guendeli.
 
 ### Zenject
 - Download `Zenject-NonUnity@v9.1.0.zip`.
