@@ -1,5 +1,5 @@
 using Godot;
-using Tabasco;
+using Game;
 using Zenject;
 
 public partial class GameController : Node

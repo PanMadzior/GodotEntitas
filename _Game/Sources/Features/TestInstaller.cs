@@ -1,11 +1,11 @@
 ﻿using Zenject;
 
-namespace Tabasco;
+namespace Game;
 
 public class TestInstaller : Installer<TestInstaller>
 {
     public override void InstallBindings()
     {
-        Container.Bind<TestService>().AsSingle().NonLazy();
+        //Container.Bind<TestService>().AsSingle().NonLazy();
     }
 }

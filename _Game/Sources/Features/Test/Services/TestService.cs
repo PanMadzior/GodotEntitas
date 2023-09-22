@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Tabasco;
+namespace Game;
 
 public class TestService
 {

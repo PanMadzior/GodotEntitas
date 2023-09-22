@@ -1,6 +1,6 @@
 ﻿using Zenject;
 
-namespace Tabasco;
+namespace Game;
 
 public class CoreInstaller : Installer
 {

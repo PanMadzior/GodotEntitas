@@ -1,6 +1,6 @@
 ﻿using Godot;
 
-namespace Tabasco;
+namespace Game;
 
 public partial class TestListener : Node, IAnyTestListener
 {

@@ -1,7 +1,7 @@
 ﻿using Entitas;
 using Godot;
 
-namespace Tabasco;
+namespace Game;
 
 public class TestInitSystem : IInitializeSystem
 {

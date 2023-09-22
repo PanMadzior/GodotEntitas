@@ -1,6 +1,6 @@
 ﻿using Entitas;
 
-namespace Tabasco;
+namespace Game;
 
 public class FixedStepSystems : Systems
 {

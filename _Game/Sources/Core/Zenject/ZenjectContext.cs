@@ -1,15 +1,20 @@
 ﻿using Godot;
+using Godot.Collections;
 using Zenject;
 
-namespace Tabasco;
+namespace Game;
 
 public partial class ZenjectContext : Node
 {
+    [Export]
+    public Array<NodeInstaller> nodeInstallers;
+
     public DiContainer Container { get; private set; }
 
     public override void _Ready()
     {
         CreateContainer();
+        InstallNodeInstallers();
         InjectSceneNodes();
         Container.ResolveRoots();
     }
@@ -18,6 +23,16 @@ public partial class ZenjectContext : Node
     {
         Container = new DiContainer();
         Container.Install<CoreInstaller>();
+    }
+
+    private void InstallNodeInstallers()
+    {
+        foreach ( var nodeInstaller in nodeInstallers ) {
+            GD.Print( $"Installing {nodeInstaller.Name} node installer..." );
+            var installer = nodeInstaller.GetInstaller();
+            Container.Inject( installer );
+            installer.InstallBindings();
+        }
     }
 
     private void InjectSceneNodes()

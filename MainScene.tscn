@@ -1,13 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://bv8k1ixtnjs56"]
+[gd_scene load_steps=5 format=3 uid="uid://bv8k1ixtnjs56"]
 
-[ext_resource type="Script" path="res://_Game/Sources/Core/ZenjectContext.cs" id="1_qiuo3"]
 [ext_resource type="Script" path="res://_Game/Sources/Core/GameController.cs" id="1_r4h07"]
+[ext_resource type="Script" path="res://_Game/Sources/Core/Zenject/ZenjectContext.cs" id="1_roqit"]
+[ext_resource type="Script" path="res://_Game/Sources/Features/Test/TestNodeInstaller.cs" id="2_bkd7d"]
 [ext_resource type="Script" path="res://_Game/Sources/Features/Test/Views/TestListener.cs" id="2_rgclj"]
 
 [node name="Root" type="Node3D"]
 
-[node name="ZenjectContext" type="Node" parent="."]
-script = ExtResource("1_qiuo3")
+[node name="ZenjectContext" type="Node" parent="." node_paths=PackedStringArray("nodeInstallers")]
+script = ExtResource("1_roqit")
+nodeInstallers = [NodePath("TestMonoInstaller")]
+
+[node name="TestMonoInstaller" type="Node" parent="ZenjectContext"]
+script = ExtResource("2_bkd7d")
 
 [node name="GameController" type="Node" parent="."]
 script = ExtResource("1_r4h07")

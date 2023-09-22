@@ -20,6 +20,6 @@ public static class GameComponentsLookup {
 
     public static readonly System.Type[] componentTypes = {
         typeof(AnyTestListenerComponent),
-        typeof(Tabasco.TestComponent)
+        typeof(Game.TestComponent)
     };
 }

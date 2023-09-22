@@ -8,19 +8,19 @@
 //------------------------------------------------------------------------------
 public partial class GameEntity {
 
-    public Tabasco.TestComponent test { get { return (Tabasco.TestComponent)GetComponent(GameComponentsLookup.Test); } }
+    public Game.TestComponent test { get { return (Game.TestComponent)GetComponent(GameComponentsLookup.Test); } }
     public bool hasTest { get { return HasComponent(GameComponentsLookup.Test); } }
 
     public void AddTest(int newValue) {
         var index = GameComponentsLookup.Test;
-        var component = (Tabasco.TestComponent)CreateComponent(index, typeof(Tabasco.TestComponent));
+        var component = (Game.TestComponent)CreateComponent(index, typeof(Game.TestComponent));
         component.value = newValue;
         AddComponent(index, component);
     }
 
     public void ReplaceTest(int newValue) {
         var index = GameComponentsLookup.Test;
-        var component = (Tabasco.TestComponent)CreateComponent(index, typeof(Tabasco.TestComponent));
+        var component = (Game.TestComponent)CreateComponent(index, typeof(Game.TestComponent));
         component.value = newValue;
         ReplaceComponent(index, component);
     }

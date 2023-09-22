@@ -1,7 +1,7 @@
 ﻿using Entitas;
 using Entitas.CodeGeneration.Attributes;
 
-namespace Tabasco;
+namespace Game;
 
 [Game, Event( EventTarget.Any )]
 public class TestComponent : IComponent

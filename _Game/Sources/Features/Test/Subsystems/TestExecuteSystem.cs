@@ -2,7 +2,7 @@
 using Entitas;
 using Godot;
 
-namespace Tabasco;
+namespace Game;
 
 public class TestExecuteSystem : IExecuteSystem
 {
