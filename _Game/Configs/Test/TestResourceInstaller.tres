@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="TestResourceInstaller" load_steps=2 format=3 uid="uid://khwptplvmcmn"]
+
+[ext_resource type="Script" path="res://_Game/Sources/Features/Test/TestResourceInstaller.cs" id="1_gshs8"]
+
+[resource]
+script = ExtResource("1_gshs8")

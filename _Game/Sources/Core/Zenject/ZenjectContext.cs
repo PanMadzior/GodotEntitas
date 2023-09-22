@@ -4,8 +4,11 @@ using Zenject;
 
 namespace Game;
 
+[GlobalClass]
 public partial class ZenjectContext : Node
 {
+    [Export]
+    public Array<ResourceInstaller> resourceInstallers;
     [Export]
     public Array<NodeInstaller> nodeInstallers;
 
@@ -15,6 +18,7 @@ public partial class ZenjectContext : Node
     {
         CreateContainer();
         InstallNodeInstallers();
+        InstallNodeInstallers();
         InjectSceneNodes();
         Container.ResolveRoots();
     }
@@ -23,6 +27,16 @@ public partial class ZenjectContext : Node
     {
         Container = new DiContainer();
         Container.Install<CoreInstaller>();
+    }
+
+    private void InstallResourceInstallers()
+    {
+        foreach ( var resourceInstaller in resourceInstallers ) {
+            GD.Print( $"Installing {resourceInstaller.ResourceName} resource installer..." );
+            var installer = resourceInstaller.GetInstaller();
+            Container.Inject( installer );
+            installer.InstallBindings();
+        }
     }
 
     private void InstallNodeInstallers()

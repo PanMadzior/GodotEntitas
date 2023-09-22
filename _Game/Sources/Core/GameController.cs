@@ -2,6 +2,7 @@ using Godot;
 using Game;
 using Zenject;
 
+[GlobalClass]
 public partial class GameController : Node
 {
     private Contexts         _contexts;
